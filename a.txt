@@ -1,0 +1,23 @@
+
+How to analyze memory in kernel crash dump on linux ?
+------------------------
+
+
+1. System Information
+
+crash> sys
+      KERNEL: /cores/retrace/repos/kernel/x86_64/usr/lib/debug/lib/modules/3.10.0-693.33.1.rt56.621.el6rt.x86_64/vmlinux
+    DUMPFILE: /cores/retrace/tasks/747611042/crash/vmcore  [PARTIAL DUMP]
+        CPUS: 40
+        DATE: Tue Jun 15 09:44:35 EDT 2021
+      UPTIME: 18 days, 04:16:22
+LOAD AVERAGE: 1.53, 1.53, 1.51
+       TASKS: 797
+    NODENAME: ngelinux002
+     RELEASE: 3.10.0-693.33.1.rt56.621.el6rt.x86_64   <<<<<<<<<<<<< RT kernel 
+     VERSION: #1 SMP PREEMPT RT Fri May 25 11:46:21 EDT 2018  <<<< kernel build date
+     MACHINE: x86_64  (2597 Mhz)
+      MEMORY: 63.9 GB
+       PANIC: "SysRq : Trigger a crash"  <<<<<<< Manually panicked.
+ 
+
